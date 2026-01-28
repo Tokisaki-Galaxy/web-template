@@ -31,5 +31,5 @@
  - **代码审查准备**：
     - 提交前务必运行 `npx prettier --write .` 修复格式，并运行 `npx knip` 确保无遗留废弃代码。
 
-## 示例Live2D模型
-如果测试Live2D模型，请使用`https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/haru/haru_greeter_t03.model3.json`
+## 示例测试模型
+ - **Live2D (Model3)**: `https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/haru/haru_greeter_t03.model3.json`
