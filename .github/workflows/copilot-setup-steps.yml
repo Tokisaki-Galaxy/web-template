@@ -38,18 +38,6 @@ jobs:
             echo "No package.json found, skipping dependency installation."
           fi
 
-      - name: Install Playwright Chromium
-        run: |
-          if [ -f package.json ] && grep -q "\"playwright\"" package.json; then
-            npx playwright install --with-deps chromium
-          elif [ -f package.json ]; then
-            echo "Playwright not found in package.json, installing as devDependency first..."
-            npm install -D playwright
-            npx playwright install --with-deps chromium
-          else
-            echo "No package.json found, skipping Playwright installation."
-          fi
-
       - name: Initial Checks
         run: |
           if [ ! -f package.json ]; then
